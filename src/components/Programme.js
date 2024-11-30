@@ -9,7 +9,7 @@ const Programme = () => {
     <div id='programs' className="flex bg-gray-600 flex-col gap-2 p-2">
       {/* Title Section */}
       <div
-        className="flex justify-center text-white font-bold uppercase italic mt-16 sm:text-[2rem] text-[1.5rem] sm:gap-[8rem] gap-4 sm:flex-row flex-col text-center sm:items-center"
+        className="flex justify-center text-white font-bold uppercase italic mt-60 sm:mt-0 sm:text-[2rem] text-[1.5rem] sm:gap-[8rem] gap-4 sm:flex-row flex-col text-center sm:items-center "
       >
         <span
           className="text-transparent font-sans"

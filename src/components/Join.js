@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 const Join = () => {
   const form = useRef(); // Now useRef will be defined
-  const mobile = window.innerWidth <= 768 ? true : false;
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -72,7 +72,7 @@ const Join = () => {
         placeholder="Enter your Email address"
       />
       <button
-        className="bg-orange-400 text-white border-none cursor-pointer  sm:w-32 sm:h-12 w-fit h-fit"
+        className="bg-orange-400 text-white border-none cursor-pointer size-12 sm:w-32 sm:h-12 "
       >
         Join now
       </button>

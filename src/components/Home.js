@@ -11,7 +11,7 @@ const Home = () => {
   const transition = { type: 'spring', duration: 3 };
 
   return (
-    <div id="home" className="bg-gray-600 backdrop-blur-3xl flex min-h-screen relative flex-col md:flex-row">
+    <div id="home" className="bg-gray-600 backdrop-blur-3xl flex h-screen relative flex-col md:flex-row md:h-[52rem]">
       {/* Left Side */}
       <div className="left-side flex flex-col justify-start p-8 sm:p-8 md:flex-[3] mt-0">
         {/* Header */}
@@ -25,7 +25,7 @@ const Home = () => {
             whileInView={{ left: '6px' }}
             transition={transition}
           />
-          <span className="{relative bg-gray-800 rounded-3xl p-4 mt-6 text-white font-bold uppercase z-[2] sm:text-base">
+          <span className="{relative bg-gray-800 rounded-3xl p-2 mt-6 text-white text-sm font-bold uppercase z-[2] sm:text-base ">
             The best fitness club in the town
           </span>
         </div>
@@ -81,7 +81,7 @@ const Home = () => {
 
      {/* Right Side */}
      <div
-  className={`right-side relative flex flex-[1] justify-center bg-orange-400 sm:bg-orange-400 bg-transparent`}
+  className="right-side relative flex flex-[1] justify-center bg-orange-400 sm:bg-orange-400 bg-transparent h-[50rem]"
 >
   {/* Join Now Button */}
   <button
@@ -120,7 +120,7 @@ const Home = () => {
 
   {/* Calories Box */}
   <motion.div
-    className={`flex bg-gradient-to-r from-zinc-500 to-stone-500 rounded-lg items-center gap-3 absolute sm:mt-[3rem] sm:mr-[12rem] mt-[28rem] mr-4 h-16 sm:h-20 w-[12rem] sm:w-56`}
+    className={`flex bg-gradient-to-r from-zinc-500 to-stone-500 rounded-lg items-center gap-3 absolute sm:mt-[48rem] sm:mr-[12rem] mt-[28rem] mr-4 h-16 sm:h-20 w-[12rem] sm:w-56`}
     initial={{ right: '37rem' }}
     whileInView={{ right: '28rem' }}
     transition={transition}
