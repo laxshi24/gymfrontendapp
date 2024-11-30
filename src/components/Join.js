@@ -23,12 +23,11 @@ const Join = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row p-[2rem] bg-gray-600 items-center justify-between">
+    <div className="sm:flex flex-col lg:flex-row p-[2rem] bg-gray-600 items-center justify-between">
       {/* Left side */}
       <div
-        className={`text-white lg:text-[3rem] font-bold uppercase relative lg:text-left mb-16 ${
-          mobile ? 'mt-[22rem] flex-col text-[1.5rem] text-center' : 'mt-28 text-[2.5rem] text-center'
-        }`}
+        className="text-white sm:text-[3rem] text-[2.5rem]  font-bold uppercase relative lg:text-left mb-16 sm:mt-28 mt-[23rem]  text-center
+        "
       >
         <hr className="absolute w-[10.5rem] border-[2px] border-orange-400 rounded-[20%] mb-0 mx-auto lg:mx-0" />
         <div className="mt-[-1]">
@@ -59,30 +58,27 @@ const Join = () => {
       </div>
 
       {/* Right side (Form) */}
-      <div className={`flex justify-center lg:justify-start items-center ${mobile ? 'mr-0 mt-1' : 'mr-40 mt-36'}`}>
-        <form
-          ref={form}
-          action=""
-          className={`flex gap-[0.5rem] bg-gray-400 ${mobile ? 'flex-col items-center w-[14rem] p-[0.8rem]' : 'p-[1.4rem] gap-[1rem]'}`}
-          onSubmit={sendEmail}
-        >
-          <input
-            type="email"
-            name="user_email"
-            className={`border-none outline-none placeholder-gray-500 bg-transparent text-orange-400 ${
-              mobile ? 'w-[12rem] p-1' : 'w-[18rem] md:w-[20rem]'
-            }`}
-            placeholder="Enter your Email address"
-          />
-          <button
-            className={`bg-orange-400 text-white border-none cursor-pointer ${
-              mobile ? 'w-[6rem] h-[2.5rem] text-sm' : 'w-28 h-10'
-            }`}
-          >
-            Join now
-          </button>
-        </form>
-      </div>
+      <div className="sm:flex  flex-col justify-center lg:justify-start items-center mr-40  mt-28 sm:mt-12">
+    <form
+      ref={form}
+      action=""
+      className="flex bg-gray-400 p-[1.4rem] gap-[1rem] w-fit h-fit sm:w-auto"
+      onSubmit={sendEmail}
+    >
+      <input
+        type="email"
+        name="user_email"
+        className="border-none outline-none placeholder-gray-500 bg-transparent text-orange-400 w-fit sm:w-[16rem] md:w-[20rem] lg:w-[20rem]"
+        placeholder="Enter your Email address"
+      />
+      <button
+        className="bg-orange-400 text-white border-none cursor-pointer  sm:w-32 sm:h-12 w-fit h-fit"
+      >
+        Join now
+      </button>
+    </form>
+  </div>
+
     </div>
   );
 };

@@ -3,13 +3,13 @@ import { programsData } from '../../src/data/programsData';
 import RightArrow from '../assets/rightArrow.png';
 
 const Programme = () => {
-  const mobile = window.innerWidth <= 768;
+  
 
   return (
     <div id='programs' className="flex bg-gray-600 flex-col gap-2 p-2">
       {/* Title Section */}
       <div
-        className={`flex justify-center text-white font-bold uppercase italic  ${mobile ? 'flex-col gap-[1rem] text-[1.5rem] items-center mt-[3rem]' : 'mt-16 text-[3.5rem] gap-[8rem]'}`}
+        className="flex justify-center text-white font-bold uppercase italic mt-16 sm:text-[2rem] text-[1.5rem] sm:gap-[8rem] gap-4 sm:flex-row flex-col text-center sm:items-center"
       >
         <span
           className="text-transparent font-sans"
@@ -33,7 +33,7 @@ const Programme = () => {
       </div>
 
       {/* Programs Section */}
-      <div className={`flex gap-7 mr-7 ml-7 mt-20 ${mobile ? 'flex-col' : 'flex'}`}>
+      <div className="flex gap-7 mr-7 ml-7 mt-16 flex-col sm:flex-row">
         {programsData.map((program, index) => (
           <div
             key={index}
