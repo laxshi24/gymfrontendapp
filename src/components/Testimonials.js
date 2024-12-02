@@ -46,14 +46,14 @@ const Testimonials = () => {
           initial={{ opacity: 0, x: -100 }}
           transition={{ ...transition, duration: 2 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="absolute sm:mr-[9rem] w-[12rem] sm:w-[17rem] h-[15rem] sm:h-[20rem] border-[2px] bg-transparent border-solid border-orange-400 sm:ml-48 sm:mt-[5rem] ml-16 mt-[3rem] hidden sm:block"
+          className="absolute   w-[12rem] sm:w-[17rem] h-[15rem] sm:h-[20rem] border-[2px] bg-transparent border-solid border-orange-400 sm:ml-36 sm:mt-[5rem] ml-16 mt-[3rem] hidden sm:block"
         ></motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           transition={{ ...transition, duration: 2 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="absolute w-[12rem] sm:w-[17rem] h-[14rem] sm:h-[19rem] bg-gradient-to-r from-orange-500 to-orange-400 sm:ml-56 sm:mr-[7rem] ml-12 mr-[4rem] mt-[6rem] sm:mt-[8rem] hidden sm:block"
+          className="absolute w-[12rem] sm:w-[17rem] h-[14rem] sm:h-[19rem] bg-gradient-to-r from-orange-500 to-orange-400 sm:ml-44   ml-12 mr-[4rem] mt-[6rem] sm:mt-[8rem] hidden sm:block"
         ></motion.div>
 
         <motion.img
@@ -64,11 +64,11 @@ const Testimonials = () => {
           transition={transition}
           src={testimonialsData[selected].image}
           alt=""
-          className="absolute object-cover sm:mr-[1rem] sm:ml-52 sm:mt-[6rem] w-[15rem] sm:w-[17rem] h-[14rem] sm:h-[20rem] ml-10 mt-[5rem] sm:mt-[8rem] sm:ml-[6rem]"
+          className="absolute object-cover   sm:ml-40 sm:mt-[6rem] w-[15rem] sm:w-[17rem] h-[14rem] sm:h-[20rem] ml-10 mt-[5rem] "
         />
 
         {/* Arrows */}
-        <div className="flex absolute gap-[1rem] mb-[1rem] ml-8 sm:ml-16 mt-[20rem] sm:mt-[25rem]">
+        <div className="flex absolute gap-[1rem] mb-[1rem] ml-8 sm:ml-8 mt-[20rem] sm:mt-[25rem]">
           <img
             onClick={() => {
               selected === 0 ? setSelected(tLength - 1) : setSelected((prev) => prev - 1);

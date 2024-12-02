@@ -58,7 +58,7 @@ const Join = () => {
       </div>
 
       {/* Right side (Form) */}
-      <div className="sm:flex  flex-col justify-center lg:justify-start items-center mr-40  mt-28 sm:mt-12">
+      <div className="sm:flex  flex-col justify-center lg:justify-start items-center mr-44  mt-28 sm:mt-12">
     <form
       ref={form}
       action=""

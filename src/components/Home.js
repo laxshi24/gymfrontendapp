@@ -81,11 +81,11 @@ const Home = () => {
 
      {/* Right Side */}
      <div
-  className="right-side relative flex flex-[1] justify-center bg-orange-400 sm:bg-orange-400 bg-transparent h-[50rem]"
+  className="right-side relative flex flex-[1] justify-center bg-orange-400 sm:bg-orange-400 bg-transparent h-[52rem]"
 >
   {/* Join Now Button */}
   <button
-    className={`bg-white w-24 h-9 mt-4 sm:mt-6 sm:ml-36 ml-[-10rem]`}
+    className={`bg-white w-24 h-9 mt-4 sm:mt-6 sm:ml-28 ml-[-10rem]`}
   >
     Join Now
   </button>
@@ -115,12 +115,12 @@ const Home = () => {
   <img
     src={hero_image}
     alt="Hero Image"
-    className={`z-10 absolute w-[14rem] sm:w-[23rem] mt-[-2rem] sm:mt-[10rem] mr-[-13rem] sm:mr-[20rem]`}
+    className={`z-10 absolute w-[14rem] sm:w-[23rem] mt-[-2rem] sm:mt-[10rem] mr-[-13rem] sm:mr-[25.5rem]`}
   />
 
   {/* Calories Box */}
   <motion.div
-    className={`flex bg-gradient-to-r from-zinc-500 to-stone-500 rounded-lg items-center gap-3 absolute sm:mt-[48rem] sm:mr-[12rem] mt-[28rem] mr-4 h-16 sm:h-20 w-[12rem] sm:w-56`}
+    className={`flex bg-gradient-to-r from-zinc-500 to-stone-500 rounded-lg items-center gap-3 absolute sm:mt-[46rem] sm:mr-[12rem] mt-[28rem] mr-4 h-16 sm:h-20 w-[12rem] sm:w-56`}
     initial={{ right: '37rem' }}
     whileInView={{ right: '28rem' }}
     transition={transition}
